@@ -6,6 +6,8 @@ const mongoose  = require('mongoose');
 const Restaurant = require('./models/Restaurant');
 const cors = require('cors');
 
+mongoose.set('strictQuery', false);
+
 
 const app = express();
 
