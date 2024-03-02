@@ -1,0 +1,104 @@
+@import url("http://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+  
+body {
+    color: #333;
+    align-items: center;
+    background-color: #b9b9b9;
+}
+
+img {
+    min-width: 100%;
+  }
+
+header {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchForm {
+    width: 420px;
+    height: 50px;
+    padding: 15px;
+    margin: 0 auto;
+    border: 2px solid rgb(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #b9b9b9;
+    
+}
+
+.searchForm:hover {
+    background-color: #fff;
+    cursor: pointer;  
+}
+
+.block {
+    height: 400px;
+    padding: 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin: 30px 0px;
+}
+
+.image {
+    background-color: #ae3b3b;
+    margin: 0 50px 0 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+form.createRestaurantForm {
+    max-width: 420px;
+    margin: 0 auto;
+    border: 2px solid rgb(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(15px);
+        
+}
+
+form.createRestaurantForm input {
+    display: block;
+    margin: 30px 0;
+    width: 100%;
+    height: 50px;;
+    border: 2px solid rgb(255, 255, 255, 0.6);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    padding: 20px 20px 20px 20px;
+    background: transparent;
+}
+
+form.createRestaurantForm button{
+    width: 100%;
+    height: 50px;
+    display: block;
+    background: #fff;
+    border: none;
+    color: #333;
+    border-radius: 5px;
+    box-decoration-break: 0px 0px 10px rgba(0, 0, 0, 0,1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+form.createRestaurantForm h1{
+    text-align: center;
+    font-size: 30px;
+}
