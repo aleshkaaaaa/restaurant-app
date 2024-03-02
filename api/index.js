@@ -1,3 +1,6 @@
+require('dotenv').config();
+
+
 const express = require('express');
 const mongoose  = require('mongoose');
 const Restaurant = require('./models/Restaurant');
@@ -10,7 +13,7 @@ app.use(cors({origin:'http://localhost:3000'}));
 app.use(express.json());
 
 mongoose
-.connect('mongodb+srv://admin:admin@cluster0.sknl5oe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+.connect(process.env.DB_URI)
 .then(() => console.log('DB connected'))
 .catch((err) => {
     console.error(err);
@@ -36,4 +39,4 @@ app.get('/post', async (req, res) => {
     res.json(await Restaurant.find());
 });
 
-app.listen(4000);
+app.listen(process.env.PORT);
